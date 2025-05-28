@@ -1,0 +1,96 @@
+.aiBotContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.mainCard {
+  width: 100%;
+  max-width: 700px;
+}
+
+.title {
+  text-align: center;
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.subTitle {
+  color: #00e6e6; /* Lighter neon blue */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.portfolioSummaryCard {
+  background-color: #2a2a3e; /* Slightly different background */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.placeholderText {
+  color: #aaa;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.actionArea {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.loadingText {
+  text-align: center;
+  color: #00ffff;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.suggestionsDisplayCard {
+  background-color: #1f1f38; /* Darker, distinct background for suggestions */
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Renamed from .suggestionsText to .suggestionsTextContainer */
+.suggestionsTextContainer {
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  background-color: transparent;
+  padding: 0; /* Or add some padding if needed within the container */
+  margin: 0;
+}
+
+/* General styling for paragraphs within the container */
+.suggestionsTextContainer p {
+  margin-bottom: 0.8rem; /* Space between paragraphs */
+}
+
+/* Styling for ordered lists */
+.suggestionsTextContainer ol {
+  margin-left: 1.5rem; /* Indent list */
+  margin-bottom: 0.8rem;
+}
+
+.suggestionsTextContainer li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Styling for strong and em tags, now correctly applied to HTML elements */
+.suggestionsTextContainer strong {
+  color: #00ffff; /* Neon blue for emphasis */
+  font-weight: bold; /* Ensure browsers render it bold */
+}
+
+.suggestionsTextContainer em {
+  color: #ffcc00; /* Yellow for important notes */
+  font-style: italic; /* Ensure browsers render it italic */
+}

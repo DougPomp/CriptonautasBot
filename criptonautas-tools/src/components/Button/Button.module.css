@@ -1,0 +1,23 @@
+.button {
+  background-color: #00ffff; /* Neon blue */
+  color: #1a1a2e; /* Dark background color for text contrast */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00e6e6; /* Slightly darker neon blue */
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Neon glow effect */
+}
+
+.button:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}

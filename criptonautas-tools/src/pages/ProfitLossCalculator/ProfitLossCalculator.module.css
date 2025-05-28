@@ -1,0 +1,73 @@
+.calculatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top to see content when card grows */
+  padding: 2rem 0; /* Add some padding top and bottom */
+}
+
+.calculatorCard {
+  width: 100%;
+  max-width: 600px; /* Limit card width */
+  /* Inherits base styles from Card.module.css */
+}
+
+.title {
+  text-align: center;
+  color: #00ffff; /* Neon blue for title */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c0c0c0; /* Lighter than main text for labels */
+  font-size: 0.9rem;
+}
+
+/* Input component already has its own styling, this is for layout */
+
+.resultsSection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.2); /* Neon blue separator */
+}
+
+.resultsTitle {
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.resultsSection p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resultsSection p strong {
+  color: #ffffff; /* White for emphasis on results */
+}
+
+.profit {
+  color: #00ff00; /* Neon green for profit */
+}
+
+.loss {
+  color: #ff0000; /* Neon red for loss */
+}
+
+.error {
+  color: #ff0000; /* Neon red for errors */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Add styles for loading state if needed, e.g., a spinner */
+/* Button component already has its own styling for disabled state */

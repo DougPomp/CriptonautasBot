@@ -1,0 +1,87 @@
+.glossaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Reduced gap slightly */
+  padding: 2rem 0;
+}
+
+.title {
+  text-align: center;
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1rem; /* Reduced margin */
+  font-size: 1.8rem;
+}
+
+.searchAndAISection {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  /* Input component already has base styling. 
+     If specific overrides are needed for this page, add them here.
+     For example, if its width needs to be different in this context. */
+  width: 100%; /* Ensure it takes full width of its container */
+}
+
+.aiPlaceholderCard {
+  background-color: #1f1f38; /* Darker, distinct background */
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.aiTitle {
+  color: #00e6e6; /* Lighter neon blue */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.aiText {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.glossaryList {
+  width: 100%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column list */
+  gap: 1rem;
+}
+
+.termCard {
+  background-color: #2a2a3e; /* Slightly lighter than main card background */
+  padding: 1.2rem 1.5rem;
+  border: 1px solid rgba(0, 255, 255, 0.15); /* Slightly more prominent border */
+}
+
+.termTitle {
+  color: #00ffff; /* Neon blue for term */
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.termExplanation {
+  color: #d0d0d0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.noResultsText {
+  color: #ffcc00; /* Yellow for no results, more noticeable */
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}

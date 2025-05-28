@@ -1,0 +1,69 @@
+.converterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.converterCard {
+  width: 100%;
+  max-width: 600px;
+}
+
+.title {
+  text-align: center;
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+}
+
+.resultsSection {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 255, 255, 0.2); /* Neon blue separator */
+  text-align: center;
+}
+
+.resultsTitle {
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.resultsSection p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.convertedAmount {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff00; /* Neon green for the converted amount */
+  display: block; /* Make it take its own line */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.exchangeRate {
+  font-size: 0.9rem;
+  color: #aaa; /* Lighter color for less emphasis */
+}
+
+.error {
+  color: #ff0000; /* Neon red for errors */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
