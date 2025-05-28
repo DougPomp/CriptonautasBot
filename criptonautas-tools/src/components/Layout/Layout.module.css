@@ -1,0 +1,117 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure layout takes at least full viewport height */
+  background-color: #1a1a2e; /* Same as body background from global.css */
+}
+
+.header {
+  background-color: #1f1f38; /* Slightly different from main layout bg */
+  color: #e0e0e0;
+  padding: 0 2rem; /* Adjusted padding for flex layout */
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.1); /* Subtle neon shadow */
+  /* text-align: center; Removed for flex */
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; /* Fixed height for the header */
+  max-width: 1200px; /* Match mainContent max-width */
+  margin: 0 auto; /* Center container */
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.logoLink h1 { /* Style for h1 specifically within logoLink if needed */
+  margin: 0;
+  font-size: 1.8rem;
+  color: #00ffff; /* Neon blue for the main title */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem; /* Space between nav links */
+}
+
+.navLink {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00ffff; /* Neon blue */
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #00ffff; /* Neon blue on hover */
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+
+.mainContent {
+  flex-grow: 1; /* Allows main content to expand and fill available space */
+  padding: 2rem; /* Keep padding for content area */
+  width: 100%;
+  max-width: 1200px; /* Max width for content, centered */
+  margin: 0 auto; /* Center the content area */
+}
+
+.footer {
+  background-color: #1f1f38; /* Same as header */
+  color: #aaa; /* Lighter text for footer */
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.1); /* Subtle neon shadow on top */
+}
+
+/* Basic responsiveness: Stack elements on smaller screens if needed, though this layout is simple */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem; /* Adjusted padding for smaller screens */
+  }
+  .headerContainer {
+    flex-direction: column;
+    height: auto; /* Allow header to grow if needed */
+    padding: 0.8rem 0;
+  }
+  .logoLink h1 {
+    font-size: 1.6rem; /* Slightly smaller logo */
+    margin-bottom: 0.5rem; /* Space between logo and nav on mobile */
+  }
+  .nav {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 0.5rem; /* Reduce gap for vertical layout */
+    align-items: center; /* Center nav links */
+  }
+  .navLink {
+    font-size: 0.95rem;
+  }
+  .mainContent {
+    padding: 1.5rem 1rem;
+  }
+  .footer {
+    padding: 0.8rem 1rem;
+  }
+}

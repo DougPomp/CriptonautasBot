@@ -1,0 +1,19 @@
+.input {
+  background-color: #2a2a3e; /* Slightly lighter than page background */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #00ffff; /* Neon blue border */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%; /* Make input take full width of its container */
+}
+
+.input:focus {
+  outline: none;
+  border-color: #00e6e6; /* Slightly darker neon blue on focus */
+  box-shadow: 0 0 8px #00ffff; /* Neon glow effect on focus */
+}
+
+.input::placeholder {
+  color: #888; /* Lighter placeholder text */
+}

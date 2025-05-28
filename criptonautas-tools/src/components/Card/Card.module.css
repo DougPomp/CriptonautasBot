@@ -1,0 +1,8 @@
+.card {
+  background-color: #1f1f38; /* Darker than body, but distinct */
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1), 0 0 5px rgba(0, 255, 255, 0.2); /* Subtle neon blue shadow */
+  border: 1px solid rgba(0, 255, 255, 0.2); /* Faint neon border */
+}

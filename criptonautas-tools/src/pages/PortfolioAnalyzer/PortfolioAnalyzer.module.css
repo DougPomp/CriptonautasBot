@@ -1,0 +1,120 @@
+.analyzerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.formCard,
+.portfolioDisplayCard,
+.placeholderCard {
+  width: 100%;
+  max-width: 800px; /* Allow wider cards for table display */
+}
+
+.title,
+.portfolioTitle,
+.placeholderTitle {
+  text-align: center;
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #ff0000; /* Neon red for errors */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.portfolioHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.totalValue {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.totalValue strong {
+  color: #00ff00; /* Neon green for total value */
+}
+
+.holdingsTableContainer {
+  overflow-x: auto; /* Allow horizontal scrolling for table on small screens */
+}
+
+.holdingsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.holdingsTable th,
+.holdingsTable td {
+  border: 1px solid rgba(0, 255, 255, 0.2); /* Neon blue border */
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+.holdingsTable th {
+  background-color: #1f1f38; /* Darker header for table */
+  color: #00e6e6; /* Lighter neon blue for table headers */
+  font-weight: bold;
+}
+
+.holdingsTable td {
+  background-color: #2a2a3e; /* Slightly lighter than card background */
+}
+
+.holdingsTable tr:nth-child(even) td {
+  background-color: #252535; /* Slightly different for even rows */
+}
+
+.priceError {
+  color: #ffcc00; /* Yellow for price errors/unavailable */
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.analysisPlaceholderContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px; /* Match portfolio card width */
+    margin-top: 1rem; /* Space above the placeholder section */
+}
+
+.placeholderCard p {
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.success {
+  color: #00ff00; /* Neon green for success messages */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}

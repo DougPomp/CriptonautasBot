@@ -1,0 +1,73 @@
+.simulatorContainer {
+  display: flex;
+  flex-direction: column; /* Stack form and portfolio */
+  align-items: center;
+  gap: 2rem; /* Space between form card and portfolio card */
+  padding: 2rem 0;
+}
+
+.formCard,
+.portfolioCard {
+  width: 100%;
+  max-width: 700px; /* Max width for these cards */
+}
+
+.title,
+.portfolioTitle {
+  text-align: center;
+  color: #00ffff; /* Neon blue */
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #ff0000; /* Neon red for errors */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.portfolioList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.portfolioItemCard {
+  background-color: #2a2a3e; /* Slightly lighter than main card background */
+  padding: 1rem;
+  border: 1px solid rgba(0, 255, 255, 0.1); /* Subtle neon border */
+}
+
+.portfolioItemCard h4 {
+  color: #00e6e6; /* Lighter neon blue for item title */
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  text-transform: capitalize; /* Capitalize the crypto name */
+}
+
+.portfolioItemCard p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+.success {
+  color: #00ff00; /* Neon green for success messages */
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
